@@ -19,7 +19,7 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
         button_close.setOnClickListener {
-            setResult(Activity.RESULT_OK)
+            setResult(Activity.RESULT_OK, Intent().putExtra("data", "hoge"))
             finish()
         }
     }
